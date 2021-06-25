@@ -6,9 +6,9 @@ class Solution {
 public:
     vector<int> corpFlightBookings(vector<vector<int>>& bookings, int n) {
         
-        //add reservations to the lasr flight in the range, 
+        //add reservations to the last flight in the range, 
         //and remove them before the first flight in range.
-        //then use the running sum(prefix sum) to update reservations for all flights.
+        //then use the running sum(suffix sum) to update reservations for all flights.
         
         int N = bookings.size();
         vector<int> v(n,0);
